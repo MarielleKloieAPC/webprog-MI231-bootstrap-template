@@ -1,5 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+    .gallery-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 18px;
+    }
+    
+    .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+  
+  .gallery img {
+    object-fit: cover;
+    border-radius: 20px;
+    }
+    
+    h1 {
+    text-align: center;
+    background: #6a3fa0;
+    color: #e2caff;
+    font-size: 40px;
+    padding: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    }
+    
+    h2 {
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    text-align: center;
+    }
+  
+    p {
+        font-family: verdana;
+        font-size: 20px;
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        line-height: 22px;
+    }
+  
+    .paragraph  {
+        font-family: verdana;
+        font-size: 20px;
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 30px;
+        margin-right: 15px;
+        line-height: 22px;
+    }
+  
+    ul li {
+        list-style-type: square;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+  
+    li {
+        font-family: verdana;
+        font-size: 20px;
+    }
+    </style>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -35,13 +109,88 @@
             </div>
         </nav>
         <!-- Page content-->
-        <div class="container">
-            <div class="text-center mt-5">
-                <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
-                <p>Bootstrap v5.2.3</p>
+         <div class="container-fluid mt-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md" style="background-color: rgb(106,63,160); color: rgb(226, 202, 255);">
+                        <h2>About Me</h2>
+                        <p>Hello! My username is MarielleKloie, this is my personal profile web page.</p>
+                        <p>I aspire to be an Information Technology Specialist, a position that can hone me into the best employee I can be, versatile and efficient enough to be showcased in the industry today. Being in a working environment will encourage me to be confident and true to myself.</p>
+                    </div>
+                </div>
             </div>
-        </div>
+            <br>
+  
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md" style="background-color: rgb(226, 202, 255); color: rgb(106,63,160);">
+                        <h2>Education / Achievements</h2>
+                        <ul class="a">
+                            <li>
+                                <h3>Asia Pacific College</h3>
+                                <p class="paragraph">College</p>
+                                <p class="paragraph">BS on Information Technology</p>
+                                <p class="paragraph">August 2023 – Current.</p>
+                                <p class="paragraph">Magallanes, Makati</p>
+                            </li>
+                            <li>
+                                <h3>Asia Pacific College</h3>
+                                <p class="paragraph">Senior High School</p>
+                                <p class="paragraph">August 2021 – June 2023.</p>
+                                <p class="paragraph">Magallanes, Makati</p>
+                            </li>
+                            <li>
+                                <h3>St. Theodore School Inc.</h3>
+                                <p class="paragraph">Junior High School</p>
+                                <p class="paragraph">June 2017 – March 2021</p>
+                                <p class="paragraph">Lower Bicutan, Taguig City</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md" style="background-color: rgb(106,63,160); color: rgb(226, 202, 255);">
+                        <h2>Course</h2>
+                        <p>BSIT-MI, Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies</p>
+                    </div>
+                    <div class="col-md" style="background-color: rgb(226, 202, 255); color: rgb(106,63,160);">
+                        <h2>IT Experience</h2>
+                        <ul class="b">
+                            <li>Knowledgeable in Mobile Programming in Android Studio</li>
+                            <li>Experience in developing User Interface</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+  
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md" style="background-color: rgb(106,63,160); color: rgb(226, 202, 255);">
+                        <h2>Hobbies & Interests</h2>
+                        <ul>
+                            <li>Reading manhuas, mangas, etc</li>
+                            <li>Watching different kinds of shows and movies</li>
+                            <li>Solving puzzles</li>
+                            <li>Digital and traditional drawing</li>
+                            <li>Travel and spend quality time with my family</li>
+                        </ul>
+                    </div>
+                    <div class="col-md" style="background-color: rgb(226, 202, 255); color: rgb(106,63,160);">
+                        <h2>Goals In Life / Dream</h2>
+                        <p>My goal in life is to finish and graduate college. I also aim to find a stable job to support myself and my family. I wish to have sufficient resources to build my own house and travel abroad in the future.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md" style="background-color: rgb(106,63,160); color: rgb(226, 202, 255);">
+                        <h2>Picture Gallery</h2>
+                        <div class="gallery">
+                            <img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/434020930_1612143012920404_5536001369734743984_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeFpusV_6JVyaxws8ggG0-Bo624VRVXpZdTrbhVFVell1FAC2D5aeBtw1O23QgywZeUtoMXCJaY3s_SQZh7xXhes&amp;_nc_ohc=PvkY_8QqeuUQ7kNvgGaU1Rp&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl30-2.fna&amp;_nc_gid=AcUueGxQ3P4gcOnmB8ZAK0l&amp;oh=00_AYBekqYYvrIlkJAn1iFNMyesZhu1_8eScWZ6ps-WWoq23g&amp;oe=674C78FE" width="533" height="300"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
